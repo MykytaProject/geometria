@@ -1,4 +1,5 @@
 
+import java.lang.Math;
 public class Circulo_MR extends FiguraGeometrica_MR {
 	private double radio;
 	//Constante pi
@@ -6,9 +7,12 @@ public class Circulo_MR extends FiguraGeometrica_MR {
 	
 	public Circulo_MR(double r, String tipoFigura) {
 		super(tipoFigura);
-		if (r < 0)
-			Math.abs(r);
-		radio = r;
+		if (r < 0 ){
+			radio = Math.abs(r);
+		} else {
+			radio = r;
+		}
+			
 	}
 
 	@Override
