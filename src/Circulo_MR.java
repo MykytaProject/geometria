@@ -6,6 +6,8 @@ public class Circulo_MR extends FiguraGeometrica_MR {
 	
 	public Circulo_MR(double r, String tipoFigura) {
 		super(tipoFigura);
+		if (r < 0)
+			Math.abs(r);
 		radio = r;
 	}
 
